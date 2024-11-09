@@ -14,6 +14,10 @@ The text itself is:
 > well-aligned and visually cohesive, this placeholder is successfully
 > demonstrating how the real content will fit in.
 
+### WTF is this?!?!
+It's a filler text that isn't random or nonsensical.
+As Wikipedia puts it: Filler text (also placeholder text or dummy text) is text that shares some characteristics of a real written text, but is random or otherwise generated. It may be used to display a sample of fonts, generate text for testing, or to spoof an e-mail spam filter. The process of using filler text is sometimes called greeking, although the text itself may be nonsense, or largely Latin, as in Lorem ipsum. 
+
 ## Tools
 **PETIG Generator**
 *PETIG-Generator.html* is a simple HTML-based tool that generates multiple paragraphs for copying to your content.
