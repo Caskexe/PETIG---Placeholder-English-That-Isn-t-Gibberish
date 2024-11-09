@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>PETIG - Placeholder English That Isn't Gibberish | Generate Placeholder Paragraphs</title>
+<style>
+		body {
+			font-family: 'Arial', sans-serif;
+			margin: 0;
+			padding: 0;
+			background-color: #f4f4f9;
+			color: #333;
+		}
+		.container {
+			max-width: 600px;
+			margin: 50px auto;
+			background-color: #fff;
+			padding: 20px;
+			border-radius: 8px;
+			box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+		}
+		h1 {
+			font-size: 2rem;
+			color: #444;
+			text-align: center;
+			margin-bottom: 20px;
+		}
+		label {
+			font-size: 1rem;
+			margin-bottom: 10px;
+			display: block;
+		}
+		input[type="number"] {
+			width: 100%;
+			padding: 10px;
+			margin-bottom: 20px;
+			font-size: 1rem;
+			border: 1px solid #ddd;
+			border-radius: 5px;
+			box-sizing: border-box;
+		}
+		button {
+			width: 100%;
+			padding: 12px;
+			font-size: 1.2rem;
+			color: #fff;
+			background-color: #5cb85c;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+			box-sizing: border-box;
+		}
+		button:hover {
+			background-color: #4cae4c;
+		}
+		textarea {
+			width: 100%;
+			height: 200px;
+			padding: 10px;
+			font-size: 1rem;
+			border: 1px solid #ddd;
+			border-radius: 5px;
+			resize: none;
+			background-color: #f9f9f9;
+			box-sizing: border-box;
+			margin-top: 20px;
+		}
+		.copy-btn {
+			width: 100%;
+			padding: 12px;
+			font-size: 1.2rem;
+			color: #fff;
+			background-color: #007bff;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+			box-sizing: border-box;
+			margin-top: 10px;
+		}
+		.copy-btn:hover {
+			background-color: #0056b3;
+		}
+
+		@media (max-width: 480px) {
+			h1 {
+				font-size: 1.5rem;
+			}
+			input[type="number"],
+			button,
+			.copy-btn {
+				font-size: 1rem;
+				padding: 10px;
+			}
+		}
+	</style>
+</head>
+<body>
+
+	<div class="container">
+		<h1>Paragraph Generator</h1>
+		
+		<label for="numParagraphs">Select the number of paragraphs:</label>
+		<input type="number" id="numParagraphs" min="1" value="1">
+		<button onclick="generateParagraphs()">Generate</button>
+		
+		<textarea id="output" readonly></textarea>
+		
+		<button class="copy-btn" onclick="copyToClipboard()">Select All & Copy to Clipboard</button>
+	</div>
+
+	<script>
+		const sampleText = "This is sample content meant to illustrate the final layout and design. Please note that this text is only temporary and will soon be replaced with actual information. For now, if everything appears well-aligned and visually cohesive, this placeholder is successfully demonstrating how the real content will fit in.";
+
+		function generateParagraphs() {
+			const numParagraphs = document.getElementById("numParagraphs").value;
+			const outputTextArea = document.getElementById("output");
+			let generatedText = '';
+
+			for (let i = 0; i < numParagraphs; i++) {
+				generatedText += sampleText + '\n\n'; // Add two newlines between paragraphs
+			}
+
+			outputTextArea.value = generatedText; // Set the generated text in the textarea
+		}
+
+		function copyToClipboard() {
+			const outputTextArea = document.getElementById("output");
+			outputTextArea.select(); // Select the text inside the textarea
+			document.execCommand("copy"); // Copy the selected text to the clipboard
+
+			// show an alert or a temporary message to indicate success
+			alert("Text copied to clipboard!");
+		}
+	</script>
+<footer>
+	<br><br><br><p><p style="text-align: center;">A tool by a tool: <a href="https://github.com/caskexe/">CASK.exe</a></p> </p>
+</footer>
+</body>
+</html>
