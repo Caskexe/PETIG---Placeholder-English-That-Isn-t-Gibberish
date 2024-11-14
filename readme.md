@@ -4,6 +4,8 @@
 
 **PETIG** is designed to mimic the structure of real English writing without conveying any particular message, making it ideal for use in layouts where the focus is on design, rather than content. 
 
+>> [Try it now](https://html-preview.github.io/?url=https://github.com/Caskexe/PETIG-Placeholder-English-That-Isnt-Gibberish/blob/main/PETIG-Generator.html)
+
 It offers a clearer, more engaging option for those who prefer to avoid the randomness of traditional Lorem Ipsum while still maintaining a placeholder that suits the needs of graphic design, web development, and publishing.
 
 The text itself is:
